@@ -1,0 +1,525 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Markazi Text', serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* head+nav */
+.head-nav {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+
+  width: 1200px;
+  margin: auto;
+}
+
+/* header */
+header img {
+  height: 50px;
+}
+
+/* nav */
+nav {
+  font-family:'Karla', sans-serif;
+  overflow-x: hidden;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  align-items: center;
+
+  padding: 0;
+  margin: 25px 0 25px 0;
+  list-style: none;
+  justify-items: center;
+}
+
+nav li img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav > button {
+  display: none;
+}
+
+/* nav login */
+.login-popup {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
+  justify-items: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.login-display {
+  background-color: white;
+  width: 300px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.login-display > button {
+  float: right;
+  margin: 15px 15px 0 0;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  cursor: pointer;
+}
+
+.login-display form {
+  margin-top: 70px;
+}
+
+.login-display form * {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  padding: 15px 10px 15px 10px;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  display: block;
+  margin: 15px auto 15px auto;
+}
+
+.login-display form input {
+  width: 82.5%;
+}
+
+.login-display form button {
+  margin-top: 70px;
+  width: 90%;
+  cursor: pointer;
+}
+
+
+
+
+
+/* hero section */
+.hero-section {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #495E57;
+  color: white;
+  font-family:'Karla', sans-serif;
+}
+
+.hero-section > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+
+  height: 450px;
+  width: 1200px;
+  margin: auto;
+
+  position: relative;
+}
+
+.hero-section > div h1 {
+  color: #F4CE14;
+  margin: 60px auto 0 auto;
+  font-family: 'Markazi Text', serif;
+}
+
+.hero-section > div h2 {
+  /*font-size: 2.5rem;*/
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Markazi Text', serif;
+}
+
+.hero-section > div p {
+  font-size: 1.1rem;
+  margin: 40px 150px 40px 0;
+}
+
+.hero-section img {
+  position: absolute;
+  right: 0;
+  top: 35px;
+
+  height: 460px;
+  width: 360px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* highlights */
+.highlights {
+  margin-top: 80px;
+  height: 800px;
+}
+
+.highlights h3 {
+  font-family: 'Markazi Text', serif;
+  font-size: 2rem;
+  margin: 5px auto 20px auto;
+}
+
+.highlights button {
+  float: right;
+}
+
+.highlights > div {
+  width: 1200px;
+  margin: auto;
+}
+
+.heading {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+}
+
+.heading > div {
+  align-self: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 112px;
+  height: 550px;
+}
+
+.card {
+  background-color: lightgray;
+  height: 550px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+/* testimonials */
+.testimonials {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: lightgray;
+  font-family: 'Karla', sans-serif;
+}
+
+.testimonials h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 3rem;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.testimonials div {
+  width: 1200px;
+  margin: auto;
+}
+
+/* testimonials profiles */
+.profiles {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-auto-rows: auto;
+  justify-content: space-between;
+  padding: 60px 0 100px 0;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 80px 1px;
+  padding: 10px 20px 10px 20px;
+  align-items: center;
+  max-width: 200px;
+  background-color: white;
+}
+
+/* about */
+.about > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+
+  padding-block: 50px;
+
+  height: 425px;
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.about h1, .about h2 {
+  font-family: 'Markazi Text', serif;
+  margin: 0;
+}
+
+.about h2 {
+  font-weight: normal;
+}
+
+.about p {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.4rem;
+  max-width: 400px;
+}
+
+.about img {
+  object-fit: cover;
+  height: 350px;
+  width: 225px;
+}
+
+.about img:nth-child(1) {
+  position: absolute;
+  left: 750px;
+  top: 120px;
+}
+
+.about img:nth-child(2) {
+  position: absolute;
+  left: 875px;
+}
+
+/* footer */
+footer {
+  background-color: lightgray;
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 50px;
+
+  width: 1200px;
+  margin: auto;
+}
+
+footer ul {
+  margin-top: calc((350px + 60px + 60px) / 4.5);
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+footer img {
+  height: 350px;
+  margin: 60px 25px 60px 0;
+}
+
+footer li {
+  margin-block: 5px;
+}
+
+footer li h3 {
+  margin-bottom: 40px;
+}
+
+footer li a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  /* nav */
+  .head-nav {
+    width: auto;
+    margin-inline: 5vw;
+    margin-block: 5px;
+  }
+
+  #pc-nav {
+    display: none;
+  }
+
+  nav button {
+    display: block;
+    border: none;
+    float: right;
+    background-color: transparent;
+  }
+
+  #mobile-nav {
+    grid-column: span 2;
+    animation: slideDown 0.5s ease-out forwards;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  #mobile-nav ul {
+    padding: 10px 0 20px 0;
+    margin: 0;
+  }
+
+
+  #mobile-nav li {
+    list-style: none;
+    border-bottom: solid 1px gray;
+    padding-block: 10px;
+  }
+
+  #mobile-nav li a {
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+
+  /* hero section */
+  .hero-section {
+    width: auto;
+    padding-inline: 5vw;
+    height: 850px;
+  }
+
+  .hero-section img {
+    position: relative;
+    width: 90vw;
+  }
+
+  .hero-section > div {
+    width: auto;
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+
+  .hero-section > div p {
+    margin: 40px 0 40px 0;
+  }
+
+  /* highlights */
+  .highlights {
+    margin-bottom: 150px;
+  }
+
+  .highlights > div {
+    width: auto;
+    margin-inline: 5vw;
+  }
+
+  .highlights button {
+    float: none;
+  }
+
+  .heading {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    margin-top: 40px;
+    margin-inline: 2.5vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  /* testimonials */
+  .testimonials div {
+    width: auto;
+    margin-inline: 5vw;
+  }
+
+  .profiles {
+    grid-template-columns: 95vw;
+    width: 300px;
+    row-gap: 50px;
+  }
+
+  .profile {
+    max-width: 62.5%;
+    grid-template-columns: 25vw 0;
+  }
+
+  /* about */
+  .about > div {
+    width: auto;
+    height: 1000px;
+    margin-inline: 5vw;
+
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+
+  .about p {
+    max-width: 90vw;
+  }
+
+  .about img:nth-child(1), .about img:nth-child(2) {
+    position: relative;
+    width: 90vw;
+    left: 0;
+    top: 0;
+  }
+
+  /* footer */
+  footer > div {
+    width: auto;
+    margin-inline: 5vw;
+    grid-template-columns: 1fr;
+
+    justify-self: center;
+  }
+
+  footer li h3 {
+    margin: 0;
+  }
+
+  footer ul {
+    margin: 0 0 30px 0;
+  }
+}

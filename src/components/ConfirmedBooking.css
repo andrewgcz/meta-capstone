@@ -1,0 +1,37 @@
+/* ConfirmedBooking.css */
+.confirmed-booking {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #495E57;
+}
+
+.confirmed-booking h1 {
+    width: 1200px;
+    margin: 50px auto 50px auto;
+    color: #F4Ce14;
+}
+
+.booking-info {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+#back-home {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    padding: 20px;
+}
+
+#back-home:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .confirmed-booking h1{
+        width: auto;
+    }
+}
